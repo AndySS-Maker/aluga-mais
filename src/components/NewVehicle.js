@@ -12,13 +12,10 @@ class NewVehicle extends Component {
       avaliable: false,
     };
 
-}
 
 
-render() {
-    <div>
 
-    </div>
+
 }
 
 
