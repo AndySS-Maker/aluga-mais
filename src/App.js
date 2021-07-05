@@ -4,6 +4,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Navbar";
 import Home from "./components/Home";
 import NewVehicle from "./components/NewVehicle";
+import VehicleList from "./components/VehicleList";
+//import EditVehicle from "./components/EditVehicle";
+//import VehicleDetails from "./components/VehicleDetails";
+//import DeleteVehicle from "./components/DeleteVehicle";
 
 function App() {
   return (
@@ -13,17 +17,18 @@ function App() {
       
       <Route exact path="/" component={Home} />
 
-      
       <Route path="/new-vehicle" component={NewVehicle} />
 
-      
-      {/* <Route path="/edit-character/:id" component={EditCharacter} />
+      <Route path="/vehicle-list" component={VehicleList} />
 
       
-      <Route path="/character/:id" component={CharacterDetails} />
+      {/* <Route path="/edit-vehicle/:id" component={EditVehicle} /> */}
 
       
-      <Route path="/delete-character/:id" component={DeleteCharacter} /> */}
+      {/* <Route path="/vehicle/:id" component={VehicleDetails} />
+
+      
+      <Route path="/delete-vehicle/:id" component={DeleteVehicle} /> */}
     </div>
   </BrowserRouter>
   );
