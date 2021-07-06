@@ -32,8 +32,15 @@ function Navbar() {
                 to="/vehicle-list"
               >
                 Todos Veículos
+              </NavLink>              
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" activeClassName="active" to="/new-vehicle">
+                Novo Veículo
               </NavLink>
             </li>
+
+
           </ul>
         </div>
       </div>

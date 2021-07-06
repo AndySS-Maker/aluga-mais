@@ -1,7 +1,8 @@
 import { Component } from "react";
 import axios from "axios";
 
-import TextInput from './TextInput';
+import TextInput from '../TextInput';
+import ChoiceInput from '../ChoiceInput';
 
 class NewVehicle extends Component {
     state = {
@@ -20,7 +21,7 @@ class NewVehicle extends Component {
 
  handleSubmit = async () => {
     const response = await axios.post(
-      'http://ironrest.herokuapp.com/alugaMais/new',
+      'http://ironrest.herokuapp.com/alugaMais',
       this.state
     );
 
@@ -41,35 +42,35 @@ render() {
     return (
       <div className="container">
         <TextInput
-          label="Image_url"
+          label="Imagem URL"
           type="text"
           name="image_url"
           value={this.state.image_url}
           onChange={this.handleChange}
         />
         <TextInput
-          label="Name"
+          label="Nome"
           type="text"
           name="name"
           value={this.state.name}
           onChange={this.handleChange}
         />
         <TextInput
-          label="Brand"
+          label="Marca"
           type="text"
           name="brand"
           value={this.state.brand}
           onChange={this.handleChange}
         />
         <TextInput
-          label="Type"
+          label="Tipo"
           type="text"
           name="type"
           value={this.state.type}
           onChange={this.handleChange}
         />
         <TextInput
-          label="Year"
+          label="Ano"
           type="number"
           name="year"
           value={this.state.year}
@@ -82,12 +83,13 @@ render() {
           value={this.state.km}
           onChange={this.handleChange}
         />
-        <TextInput
-          label="Avaliable"
-          type="boolean"
+        <ChoiceInput
+          label="Disponível?"
+          type="checkbox"
           name="avaliable"
-          value={this.state.avaliable}
-          onChange={this.handleChange}
+          onChange={() => {
+            this.setState({ avaliable: !this.state.avaliable });
+          }}
         />
         <button onClick={this.handleSubmit} className="mt-5 btn btn-primary">
           Submit

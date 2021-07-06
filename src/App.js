@@ -5,9 +5,9 @@ import Navbar from "./Navbar";
 import Home from "./components/Home";
 import NewVehicle from "./components/NewVehicle";
 import VehicleList from "./components/VehicleList";
-//import EditVehicle from "./components/EditVehicle";
-//import VehicleDetails from "./components/VehicleDetails";
-//import DeleteVehicle from "./components/DeleteVehicle";
+import EditVehicle from "./components/EditVehicle";
+import VehicleDetails from "./components/VehicleDetails";
+import DeleteVehicle from "./components/DeleteVehicle";
 
 function App() {
   return (
@@ -21,11 +21,11 @@ function App() {
 
       <Route path="/vehicle-list" component={VehicleList} />
       
-      {/* <Route path="/edit-vehicle/:id" component={EditVehicle} /> */}
+      <Route path="/alugaMais/edit/:_id" component={EditVehicle} />
       
-      {/* <Route path="/vehicle/:id" component={VehicleDetails} />
+      <Route path="/alugaMais/details/:_id" component={VehicleDetails} />
       
-      <Route path="/delete-vehicle/:id" component={DeleteVehicle} /> */}
+      <Route path="/alugaMais/delete/:_id" component={DeleteVehicle} />
     </div>
   </BrowserRouter>
   );

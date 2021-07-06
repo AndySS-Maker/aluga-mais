@@ -12,7 +12,7 @@ class VehicleDetails extends Component {
         km: 0,
         avaliable: false,
       };
-  };
+  
 
   componentDidMount = async () => {
     try {
@@ -28,26 +28,39 @@ class VehicleDetails extends Component {
     }
   };
 
-  render()  {
+  render() {
     return (
       <div>
-        <h3>{this.state.name}</h3>
+        <div>
+        <img src={this.state.image_url} alt="vehicle" />
+        </div>
         <p>
-          <strong>ID: </strong>
-          {this.state._id}
+          <strong>Nome: </strong>
+          {this.state.name}
         </p>
         <p>
-          <strong>Brand: </strong>
+          <strong>Marca: </strong>
           {this.state.brand}
         </p>
         <p>
-          <strong>Type: </strong>
+          <strong>Tipo: </strong>
           {this.state.type}
         </p>
         <p>
-          <strong>Is the vehicle avaliable? </strong>
-          {this.state.avaliable ? "Yes" : "No"}
+          <strong>Ano: </strong>
+          {this.state.year}
         </p>
+        <p>
+          <strong>Km: </strong>
+          {this.state.km}
+        </p>
+        <div>
+        <p>
+          <strong>Veículo disponível? </strong>
+          {this.state.avaliable ? "Sim" : "Não"}
+        </p>
+        </div>
+
       </div>
     );
   }

@@ -27,10 +27,12 @@ class VehicleList extends Component {
   render() {
     return (
       <div className="m-5">
+        <div className="row row-cols-1 row-cols-md-3 g-4">
 
         {this.state.vehicles.map((vehicle) => (
           <VehicleCard {...vehicle} />
         ))}
+        </div>
       </div>
       /* 
         <BeerCard beer={beer} />

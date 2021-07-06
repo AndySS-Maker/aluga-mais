@@ -1,21 +1,22 @@
 import { Component } from "react";
-//import axios from "axios";
+import axios from "axios";
 
 class DeleteVehicle extends Component {
   componentDidMount = () => {
-    const id = this.props.match.params.id;
+    const _id = this.props.match.params._id;
 
     axios
-      .delete(`https://ih-crud-api.herokuapp.com/vehicles/${id}`)
+      .delete(`http://ironrest.herokuapp.com/alugaMais/${_id}`)
       .then((response) => {
         console.log(response);
         this.props.history.push("/vehicle-list");
+        //retorno para a lista
       })
       .catch((error) => console.log(error));
   };
 
   render() {
-    return <div>Deleting...</div>;
+    return <div>Deletando...</div>;
   }
 }
 
