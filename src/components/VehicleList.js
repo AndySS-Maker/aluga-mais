@@ -3,7 +3,6 @@ import { Component } from "react";
 import axios from "axios";
 import VehicleCard from "./VehicleCard";
 
-// R do CRUD (READ): Operação de leitura de todos os registros
 
 class VehicleList extends Component {
   state = {

@@ -1,8 +1,6 @@
 import { Component } from "react";
 import axios from "axios";
 
-// R do CRUD (READ): Operação de leitura de um registro específico identificado pelo seu ID
-
 class VehicleDetails extends Component {
     state = {
         _id: "",
@@ -18,7 +16,7 @@ class VehicleDetails extends Component {
 
   componentDidMount = async () => {
     try {
-      const _id = this.props.match.params._id; // Parâmetro de rota injetado pelo componente Route
+      const _id = this.props.match.params._id; 
 
       const response = await axios.get(
         `http://ironrest.herokuapp.com/alugaMais/${_id}`

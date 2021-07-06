@@ -4,8 +4,6 @@ import axios from "axios";
 import TextInput from "../TextInput";
 import ChoiceInput from "../ChoiceInput";
 
-/* U do CRUD (CREATE): Operação de atualização de um registro existente*/
-
 class EditVehicle extends Component {
     state = {
         image_url: "",
@@ -21,7 +19,7 @@ class EditVehicle extends Component {
   // Em formulários de edição, sempre precisamos primeiramente carregar os dados que já existem para dar ao usuário a possibiliadde de alterá-los. Por isso fazemos uma requisição GET e populamos o state.
   componentDidMount = async () => {
     try {
-      const _id = this.props.match.params._id; // Parâmetro de rota injetado pelo componente Route
+      const _id = this.props.match.params._id; 
 
       const response = await axios.get(
         `http://ironrest.herokuapp.com/alugaMais/${_id}`

@@ -20,13 +20,10 @@ function App() {
       <Route path="/new-vehicle" component={NewVehicle} />
 
       <Route path="/vehicle-list" component={VehicleList} />
-
       
       {/* <Route path="/edit-vehicle/:id" component={EditVehicle} /> */}
-
       
       {/* <Route path="/vehicle/:id" component={VehicleDetails} />
-
       
       <Route path="/delete-vehicle/:id" component={DeleteVehicle} /> */}
     </div>

@@ -1,7 +1,5 @@
 import { Component } from "react";
-import axios from "axios";
-
-// D do CRUD (DELETE): Deleta um registro específico
+//import axios from "axios";
 
 class DeleteVehicle extends Component {
   componentDidMount = () => {
