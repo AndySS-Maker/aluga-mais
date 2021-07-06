@@ -1,7 +1,9 @@
+import React from 'react';
+
 function TextInput(props) {
     return (
       <div className="form-group mb-3">
-        <label htmlFor={props.id}>{props.label}</label>
+        <label htmlFor={props._id}>{props.label}</label>
         <input
           _id={props._id}
           type={props.type}
