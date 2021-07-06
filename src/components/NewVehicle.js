@@ -20,7 +20,7 @@ class NewVehicle extends Component {
 
  handleSubmit = async () => {
     const response = await axios.post(
-      'http://ironrest.herokuapp.com/alugaMais/new',
+      'http://ironrest.herokuapp.com/alugaMais',
       this.state
     );
 

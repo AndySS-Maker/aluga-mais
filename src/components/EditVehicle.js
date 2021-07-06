@@ -16,7 +16,6 @@ class EditVehicle extends Component {
       };
   };
 
-  // Em formulários de edição, sempre precisamos primeiramente carregar os dados que já existem para dar ao usuário a possibiliadde de alterá-los. Por isso fazemos uma requisição GET e populamos o state.
   componentDidMount = async () => {
     try {
       const _id = this.props.match.params._id; 
@@ -43,8 +42,8 @@ class EditVehicle extends Component {
     axios
       .put(`http://ironrest.herokuapp.com/alugaMais/${id}`, this.state)
       .then((response) => {
-        // console.log(response);
-        this.props.history.push("/vehicle-list"); // Redireciona a aplicação de volta pra lista de personagens
+
+        this.props.history.push("/vehicle-list"); 
       })
       .catch((error) => {
         console.log(error);
@@ -58,7 +57,15 @@ class EditVehicle extends Component {
             <hr/>
             <form onSubmit={this.handleSubmit}>
                 <TextInput
-                    label="Vehicle Name"
+                    label="Imagem URL"
+                    type="text"
+                    name="image_url"
+                    onChange={this.handleChange}
+                    value={this.state.image_url}
+                    required
+                />
+                <TextInput
+                    label="Nome"
                     type="text"
                     name="name"
                     onChange={this.handleChange}
@@ -66,7 +73,7 @@ class EditVehicle extends Component {
                     required
                 />
                 <TextInput
-                    label="Vehicle Brand"
+                    label="Marca"
                     type="text"
                     name="brand"
                     onChange={this.handleChange}
@@ -74,15 +81,31 @@ class EditVehicle extends Component {
                     required
                 />
                 <TextInput
-                    label="Vehicle Type"
+                    label="Tipo de Veiculo"
                     type="text"
                     name="type"
                     onChange={this.handleChange}
                     value={this.state.type}
                     required
                 />
+                <TextInput
+                    label="Ano"
+                    type="number"
+                    name="year"
+                    onChange={this.handleChange}
+                    value={this.state.year}
+                    required
+                />
+                <TextInput
+                    label="Km"
+                    type="number"
+                    name="km"
+                    onChange={this.handleChange}
+                    value={this.state.km}
+                    required
+                />
                 <ChoiceInput
-                    label="Is the character in avaliable?"
+                    label="Veiculo esta disponivel?"
                     type="checkbox"
                     name="avaliable"
                     onChange={() => {
@@ -102,6 +125,6 @@ class EditVehicle extends Component {
         </div>
     );
   };
-};
+
 
 export default EditVehicle;

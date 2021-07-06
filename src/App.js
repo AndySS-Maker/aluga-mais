@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 import Home from "./components/Home";
 import NewVehicle from "./components/NewVehicle";
 import VehicleList from "./components/VehicleList";
-//import EditVehicle from "./components/EditVehicle";
+import EditVehicle from "./components/EditVehicle";
 //import VehicleDetails from "./components/VehicleDetails";
 //import DeleteVehicle from "./components/DeleteVehicle";
 
@@ -21,7 +21,7 @@ function App() {
 
       <Route path="/vehicle-list" component={VehicleList} />
       
-      {/* <Route path="/edit-vehicle/:id" component={EditVehicle} /> */}
+      <Route path="/edit-vehicle/:id" component={EditVehicle} /> 
       
       {/* <Route path="/vehicle/:id" component={VehicleDetails} />
       
