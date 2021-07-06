@@ -1,8 +1,6 @@
 import { Component } from "react";
 import axios from "axios";
 
-import TextInput from './TextInput';
-
 class VehicleDetails extends Component {
     state = {
         _id: "",

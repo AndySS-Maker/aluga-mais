@@ -40,81 +40,6 @@ class EditVehicle extends Component {
     event.preventDefault();
 
     axios
-<<<<<<< HEAD
-      .put(`http://ironrest.herokuapp.com/alugaMais/${id}`, this.state)
-      .then((response) => {
-
-        this.props.history.push("/vehicle-list"); 
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
-
-  render() {
-    return (
-        <div>
-            <h1>Edit Vehicle</h1>
-            <hr/>
-            <form onSubmit={this.handleSubmit}>
-                <TextInput
-                    label="Imagem URL"
-                    type="text"
-                    name="image_url"
-                    onChange={this.handleChange}
-                    value={this.state.image_url}
-                    required
-                />
-                <TextInput
-                    label="Nome"
-                    type="text"
-                    name="name"
-                    onChange={this.handleChange}
-                    value={this.state.name}
-                    required
-                />
-                <TextInput
-                    label="Marca"
-                    type="text"
-                    name="brand"
-                    onChange={this.handleChange}
-                    value={this.state.brand}
-                    required
-                />
-                <TextInput
-                    label="Tipo de Veiculo"
-                    type="text"
-                    name="type"
-                    onChange={this.handleChange}
-                    value={this.state.type}
-                    required
-                />
-                <TextInput
-                    label="Ano"
-                    type="number"
-                    name="year"
-                    onChange={this.handleChange}
-                    value={this.state.year}
-                    required
-                />
-                <TextInput
-                    label="Km"
-                    type="number"
-                    name="km"
-                    onChange={this.handleChange}
-                    value={this.state.km}
-                    required
-                />
-                <ChoiceInput
-                    label="Veiculo esta disponivel?"
-                    type="checkbox"
-                    name="avaliable"
-                    onChange={() => {
-                    this.setState({ avaliable: !this.state.avaliable });
-                    }}
-                    checked={this.state.avaliable}
-                />
-=======
     .put(`http://ironrest.herokuapp.com/alugaMais/${id}`, this.state)
     .then((response) => {
 
@@ -189,7 +114,6 @@ render() {
                   }}
                   checked={this.state.avaliable}
               />
->>>>>>> f9f2e37e259520f20f350139784fba9651536492
 
               <hr />
 
@@ -202,7 +126,7 @@ render() {
       </div>
     );
   };
-
+};
 
 
 export default EditVehicle;

@@ -102,13 +102,3 @@ render() {
 
 export default NewVehicle;
 
-
-
-
-
-
-
- 
-    
-
-  
