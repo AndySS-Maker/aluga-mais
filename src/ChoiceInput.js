@@ -4,14 +4,14 @@ function ChoiceInput(props) {
         <input
           className="form-check-input"
           type={props.type}
-          id={props.id}
+          _id={props._id}
           onChange={props.onChange}
           checked={props.checked}
           name={props.name}
           value={props.value}
           required={props.required}
         />
-        <label htmlFor={props.id} className="form-check-label">
+        <label htmlFor={props._id} className="form-check-label">
           {props.label}
         </label>
       </div>

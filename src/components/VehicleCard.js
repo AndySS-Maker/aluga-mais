@@ -1,5 +1,6 @@
 import React from 'react';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 
 function VehicleCard(props) {
   //   console.log(props);
@@ -29,21 +30,39 @@ function VehicleCard(props) {
     // </div>
 
 
-        <div className="row row-cols-1 row-cols-md-3 g-4">
+        
             <div className="col">
                 <div className="card h-100">
-                <img src={props.image_url} className="card-img-top" alt="vehicle" />
+                <Link to={`/alugaMais/details/${props._id}`}>
+                <img src={props.image_url} className="card-img-top" alt="vehicle" /></Link>
                 <div className="cardBody">
                     <h5 className="cardTitle">{props.name}</h5>
                     <p className="cardText">{props.brand}</p>
                     <p className="cardText">{props.type}</p>
                     <p className="cardText">{props.year}</p>
+
+                    <Link
+                    to={`/alugaMais/edit/${props._id}`}
+                    title="Editar Veículo"
+                    className="text-primary"
+                  >
+                    Editar Veículo <i className="fas fa-edit"></i>
+                    </Link>
+                    
+                    <Link
+                    to={`/alugaMais/delete/${props._id}`}
+                    title="Deletar Veículo"
+                    className="text-danger"
+                  >
+                    Deletar Veículo <i className="fas fa-trash-alt"></i>
+                    </Link>
+
                 </div>
                 </div>
             </div>
 
             
-        </div>
+        
   );
 }
 
