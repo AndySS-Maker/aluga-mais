@@ -8,6 +8,7 @@ import VehicleList from "./components/VehicleList";
 import EditVehicle from "./components/EditVehicle";
 import VehicleDetails from "./components/VehicleDetails";
 import DeleteVehicle from "./components/DeleteVehicle";
+import RentForm from "./components/RentForm";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
       <Route path="/alugaMais/details/:_id" component={VehicleDetails} />
       
       <Route path="/alugaMais/delete/:_id" component={DeleteVehicle} />
+
+      <Route path="/alugaMais/rent/:_id" component={RentForm} />
+
     </div>
   </BrowserRouter>
   );
