@@ -24,6 +24,8 @@ class EditVehicle extends Component {
         `http://ironrest.herokuapp.com/alugaMais/${_id}`
       );
 
+     delete response.data._id;
+
       this.setState({ ...response.data });
     } catch (error) {
       console.log(error);
@@ -58,6 +60,7 @@ render() {
           <hr/>
           <form onSubmit={this.handleSubmit}>
               <TextInput
+                  key= "image_url"
                   label="Imagem URL"
                   type="text"
                   name="image_url"
@@ -66,6 +69,7 @@ render() {
                   required
               />
               <TextInput
+                  key= "name"
                   label="Nome"
                   type="text"
                   name="name"
@@ -74,6 +78,7 @@ render() {
                   required
               />
               <TextInput
+                  key= "brand"
                   label="Marca"
                   type="text"
                   name="brand"
@@ -82,6 +87,7 @@ render() {
                   required
               />
               <TextInput
+                  key= "type"
                   label="Tipo de Veiculo"
                   type="text"
                   name="type"
@@ -90,6 +96,7 @@ render() {
                   required
               />
               <TextInput
+                  key= "year"
                   label="Ano"
                   type="number"
                   name="year"
@@ -98,6 +105,7 @@ render() {
                   required
               />
               <TextInput
+                  key= "km"
                   label="Km"
                   type="number"
                   name="km"
