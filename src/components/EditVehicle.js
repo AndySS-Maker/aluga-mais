@@ -24,6 +24,9 @@ class EditVehicle extends Component {
         `http://ironrest.herokuapp.com/alugaMais/${_id}`
       );
 
+        delete response.data._id
+        // necessário tirar ID pq esse não pode atualizar
+
       this.setState({ ...response.data });
     } catch (error) {
       console.log(error);
@@ -35,16 +38,16 @@ class EditVehicle extends Component {
   };
 
   handleSubmit = (event) => {
-    const id = this.props.match.params._id;
+    const _id = this.props.match.params._id;
 
     event.preventDefault();
 
     axios
-    .put(`http://ironrest.herokuapp.com/alugaMais/${id}`, this.state)
+    .put(`http://ironrest.herokuapp.com/alugaMais/${_id}`, this.state)
     .then((response) => {
 
       this.props.history.push("/vehicle-list");
-      // redireciona para a lista apís o feito 
+      // redireciona para a lista após o feito 
     })
     .catch((error) => {
       console.log(error);
@@ -119,7 +122,7 @@ render() {
 
               <div className="form-group">
                   <button type="submit" className="btn btn-primary">
-                    Save
+                    Salvar
                   </button>
               </div>
           </form>
