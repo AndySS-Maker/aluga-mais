@@ -92,7 +92,7 @@ render() {
           }}
         />
         <button onClick={this.handleSubmit} className="mt-5 btn btn-primary">
-          Submit
+          Concluir
         </button>
       </div>
     );
@@ -101,4 +101,3 @@ render() {
 }
 
 export default NewVehicle;
-
