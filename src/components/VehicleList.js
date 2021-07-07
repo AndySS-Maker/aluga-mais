@@ -3,7 +3,6 @@ import { Component } from "react";
 import axios from "axios";
 import VehicleCard from "./VehicleCard";
 
-
 class VehicleList extends Component {
   state = {
     vehicles: [], // Nosso state inicial precisa ser uma array vazia, pois a API pode nos retornar vários personagens, que estarão dentro de uma array. Como usamos o map pra renderizar a lista, o map não roda em uma array vazia, logo evitamos erros de sintaxe.
