@@ -4,6 +4,7 @@ import React from 'react';
 import Carousel from 'react-elastic-carousel';
 import VehicleCard from './VehicleCard';
 import axios from 'axios';
+import "../style/main.scss";
 
 class Home extends Component {
     state = {

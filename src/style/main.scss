@@ -1,0 +1,32 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+$colors: (
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  "white": $white,
+  "gray": $gray-600,
+  "gray-dark": $gray-800,
+);
+
+.alpha {
+  color: #fff;
+
+  background-color: indigo;
+}
+
+.beta {
+  color: $yellow-300;
+  background-color: $indigo-900;
+}
