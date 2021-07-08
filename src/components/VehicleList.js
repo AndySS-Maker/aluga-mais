@@ -37,7 +37,7 @@ class VehicleList extends Component {
 
   render() {
     return (
-      <div className="pt-5 mb-5">
+      <div className="container pt-5 mb-5 mt-5">
 
         <div  className="mb-5">
         <Search filterVehicle={this.filterVehicle} />
@@ -46,18 +46,11 @@ class VehicleList extends Component {
         <div className="row row-cols-1 row-cols-md-3 g-4">
 
         {this.state.filtered.map((vehicle) => (
-          <VehicleCard key={vehicle._id} {...vehicle} />
+          <VehicleCard key={vehicle._id} {...vehicle} location={this.props.location.pathname} />
         ))}
         </div>
       </div>
-      /* 
-        <BeerCard beer={beer} />
-        <BeerCard
-            image_url={beer.image_url}
-            name={beer.name}
-            tagline={beer.tagline}
-            contributed_by={beer.contributed_by}
-          /> */
+      
     );
   }
 }

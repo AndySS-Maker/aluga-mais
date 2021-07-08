@@ -1,12 +1,14 @@
 import { Link, NavLink } from "react-router-dom";
 import "./style/main.scss"
+import logo from "./img/logo-alugamais.png"
 
 function Navbar() {
   return (
-    <nav className=" navbar fixed-top navbar-expand-lg navbar-dark alpha">
-      <div className="container-fluid  "> {/*remover*/}
+    <nav className=" navbar fixed-top navbar-expand-lg navbar-dark alpha shadow-sm">
+      <div className="container  "> 
 
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand ms-5" to="/">
+            <img src={logo} alt="logo" style={{width: "150px"}}  /> 
             <span style={{display: "none"}}>Aluga Mais</span>
           </Link>
           <button
@@ -22,7 +24,7 @@ function Navbar() {
           </button>
 
           <div className="collapse navbar-collapse" id="toggleMobileMenu">
-            <ul className="navbar-nav ms-auto text-center " >
+            <ul className="navbar-nav ms-auto text-center me-5" >
               <li className="nav-item">
                 <NavLink className="nav-link" activeClassName="active" to="/">
                   Home

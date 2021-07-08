@@ -16,7 +16,8 @@ function App() {
   return (
     <BrowserRouter>
     <Navbar />
-    <div className="container mt-5">
+    <br/>
+    <div>
       
       <Route exact path="/" component={Home} />
 
