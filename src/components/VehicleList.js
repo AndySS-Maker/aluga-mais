@@ -15,7 +15,7 @@ class VehicleList extends Component {
   componentDidMount = async () => {
     try {
       const response = await axios.get(
-        "http://ironrest.herokuapp.com/alugaMais"
+        "https://ironrest.herokuapp.com/alugaMais"
       );
 
       // console.log(response);

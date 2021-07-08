@@ -19,7 +19,7 @@ class VehicleDetails extends Component {
       const _id = this.props.match.params._id; 
 
       const response = await axios.get(
-        `http://ironrest.herokuapp.com/alugaMais/${_id}`
+        `https://ironrest.herokuapp.com/alugaMais/${_id}`
       );
 
       this.setState({ ...response.data });

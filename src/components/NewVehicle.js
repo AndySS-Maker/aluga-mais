@@ -21,7 +21,7 @@ class NewVehicle extends Component {
 
  handleSubmit = async () => {
     const response = await axios.post(
-      'http://ironrest.herokuapp.com/alugaMais',
+      'https://ironrest.herokuapp.com/alugaMais',
       this.state
     );
 
@@ -91,7 +91,7 @@ render() {
             this.setState({ avaliable: !this.state.avaliable });
           }}
         />
-        <button onClick={this.handleSubmit} className="mt-3 btn alpha">
+        <button onClick={this.handleSubmit} className=" btn btn-primary">
           Concluir
         </button>
       </div>
