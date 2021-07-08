@@ -24,7 +24,7 @@ class RentForm extends Component {
     const _id = this.props.match.params._id;
     
     const response = await axios.put( //put
-      `http://ironrest.herokuapp.com/alugaMais/${_id}`,
+      `https://ironrest.herokuapp.com/alugaMais/${_id}`,
       {avaliable: false});
 
 
@@ -80,21 +80,11 @@ render() {
           name="dateOut"
           value={this.state.dateOut}
           onChange={this.handleChange}
-        />  
-
-        {/* <ChoiceInput
-          label="Disponível?"
-          type="checkbox"
-          name="avaliable"
-          onChange={() => {
-            this.setState({ avaliable: !this.state.avaliable });
-          }}
-        /> */}
-        <br/>
+        />        
 
         <h3>Alugar este veículo?</h3>
 
-        <button onClick={this.handleSubmit} className="mt-5 btn btn-primary">
+        <button onClick={this.handleSubmit} className="mt-3 btn btn-primary">
           Concluir
         </button>
       </div>
