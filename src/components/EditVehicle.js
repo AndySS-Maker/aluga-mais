@@ -56,7 +56,7 @@ class EditVehicle extends Component {
 
 render() {
   return (
-      <div>
+      <div className="pt-5 mb-5">
           <h1>Edit Vehicle</h1>
           <hr/>
           <form onSubmit={this.handleSubmit}>

@@ -44,7 +44,7 @@ this.setState({
 
 render() {
     return (
-      <div className="container">
+      <div className="container pt-5 mb-5">
         <TextInput
           label="Nome completo"
           type="text"
