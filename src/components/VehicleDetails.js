@@ -30,7 +30,7 @@ class VehicleDetails extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         <div>
         <img src={this.state.image_url} alt="vehicle" />
         </div>

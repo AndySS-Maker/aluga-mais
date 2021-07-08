@@ -56,9 +56,9 @@ class EditVehicle extends Component {
 
 render() {
   return (
-      <div className="pt-5 mb-5">
-          <h1>Edit Vehicle</h1>
-          <hr/>
+      <div className="container pt-5 mb-5 mt-5">
+          <h2 className="mb-3">Editar Veículo</h2>
+
           <form onSubmit={this.handleSubmit}>
               <TextInput
                   label="Imagem URL"
@@ -118,7 +118,7 @@ render() {
                   checked={this.state.avaliable}
               />
 
-              <hr />
+
 
               <div className="form-group">
                   <button type="submit" className="btn btn-primary mt-2">

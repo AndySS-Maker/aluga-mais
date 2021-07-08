@@ -90,13 +90,56 @@ $theme-colors: (
   font-family: "Rubik", sans-serif;
 }
 
+section {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  margin: 0;
+  padding: 0;
+}
+
 .alpha {
   color: #fff;
 
   background-color: indigo;
 }
 
-.beta {
-  color: $yellow-300;
-  background-color: $indigo-900;
+.hero-image {
+  background-image: url("../img/img2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image h1 {
+  font-size: 80px;
+  padding: 20px;
+  color: #fff;
+  font-weight: 500;
+  text-shadow: 0.1em 0.1em 0.3em black;
+}
+
+.hero-image h2 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 0.1em 0.1em 0.3em black;
 }

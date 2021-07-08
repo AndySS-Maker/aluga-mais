@@ -35,18 +35,24 @@ class Home extends Component {
         ];
         return (
             <div>
-                <div>
-                    <h1>Aluga Mais</h1>
-                    <h3>Aluguel de veículos particulares.</h3>
-                </div>
+                <section className="hero-image">
+                    <h1>Veículos para todos.</h1>
+                    <h2>Para nunca mais perder uma viagem!</h2>
+
+                    
+
+                </section>
                 
-                <hr/>
+                
 
                 <div>
+                    <h2 className="text-center mt-5">Confira algumas opções:</h2>
                     <Carousel breakPoints={breakPoints} className="mt-5 mb-5">
                         {this.state.vehicles.map((vehicle) => (
                             <div>
-                                <VehicleCard key={vehicle._id} {...vehicle} style={{width: "300px", height: "auto"}} />
+                                <VehicleCard key={vehicle._id} {...vehicle} 
+                                location={this.props.location.pathname} 
+                                style={{width: "300px", height: "auto"}} />
                             </div>
 
  

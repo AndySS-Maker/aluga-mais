@@ -44,7 +44,8 @@ this.setState({
 
 render() {
     return (
-      <div className="container pt-5 mb-5">
+      <div className="container pt-5 mb-5 mt-5">
+        <h2 className="mb-3">Editar Veículo</h2>
         <TextInput
           label="Nome completo"
           type="text"
@@ -82,9 +83,9 @@ render() {
           onChange={this.handleChange}
         />        
 
-        <h3>Alugar este veículo?</h3>
+        <h4>Alugar este veículo?</h4>
 
-        <button onClick={this.handleSubmit} className="mt-3 btn btn-primary">
+        <button onClick={this.handleSubmit} className="mt-2 btn btn-primary">
           Concluir
         </button>
       </div>
