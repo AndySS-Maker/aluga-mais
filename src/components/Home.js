@@ -25,9 +25,6 @@ class Home extends Component {
       };
 
 
-
-
-
     render() {
         const breakPoints = [
             {width: 1, itemsToShow: 1},
@@ -45,7 +42,7 @@ class Home extends Component {
                 <hr/>
 
                 <div>
-                    <Carousel breakPoints={breakPoints}>
+                    <Carousel breakPoints={breakPoints} className="mt-5 mb-5">
                         {this.state.vehicles.map((vehicle) => (
                             <div>
                                 <VehicleCard key={vehicle._id} {...vehicle} style={{width: "300px", height: "auto"}} />
