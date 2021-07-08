@@ -21,7 +21,7 @@ class EditVehicle extends Component {
       const _id = this.props.match.params._id; 
 
       const response = await axios.get(
-        `http://ironrest.herokuapp.com/alugaMais/${_id}`
+        `https://ironrest.herokuapp.com/alugaMais/${_id}`
       );
 
         delete response.data._id
@@ -43,7 +43,7 @@ class EditVehicle extends Component {
     event.preventDefault();
 
     axios
-    .put(`http://ironrest.herokuapp.com/alugaMais/${_id}`, this.state)
+    .put(`https://ironrest.herokuapp.com/alugaMais/${_id}`, this.state)
     .then((response) => {
 
       this.props.history.push("/vehicle-list");
@@ -56,7 +56,7 @@ class EditVehicle extends Component {
 
 render() {
   return (
-      <div>
+      <div className="pt-5 mb-5">
           <h1>Edit Vehicle</h1>
           <hr/>
           <form onSubmit={this.handleSubmit}>
@@ -121,7 +121,7 @@ render() {
               <hr />
 
               <div className="form-group">
-                  <button type="submit" className="btn btn-primary">
+                  <button type="submit" className="btn btn-primary mt-2">
                     Salvar
                   </button>
               </div>

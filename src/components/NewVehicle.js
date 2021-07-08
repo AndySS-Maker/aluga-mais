@@ -21,7 +21,7 @@ class NewVehicle extends Component {
 
  handleSubmit = async () => {
     const response = await axios.post(
-      'http://ironrest.herokuapp.com/alugaMais',
+      'https://ironrest.herokuapp.com/alugaMais',
       this.state
     );
 
@@ -40,7 +40,7 @@ this.setState({
 
 render() {
     return (
-      <div className="container">
+      <div className="container pt-5 mb-5">
         <TextInput
           label="Imagem URL"
           type="text"
@@ -91,7 +91,7 @@ render() {
             this.setState({ avaliable: !this.state.avaliable });
           }}
         />
-        <button onClick={this.handleSubmit} className="mt-5 btn btn-primary">
+        <button onClick={this.handleSubmit} className=" btn btn-primary">
           Concluir
         </button>
       </div>

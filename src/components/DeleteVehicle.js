@@ -6,7 +6,7 @@ class DeleteVehicle extends Component {
     const _id = this.props.match.params._id;
 
     axios
-      .delete(`http://ironrest.herokuapp.com/alugaMais/${_id}`)
+      .delete(`https://ironrest.herokuapp.com/alugaMais/${_id}`)
       .then((response) => {
         console.log(response);
         this.props.history.push("/vehicle-list");

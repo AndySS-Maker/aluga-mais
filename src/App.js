@@ -1,7 +1,9 @@
 import { BrowserRouter, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./style/main.scss";
 
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import Home from "./components/Home";
 import NewVehicle from "./components/NewVehicle";
 import VehicleList from "./components/VehicleList";
@@ -31,6 +33,7 @@ function App() {
       <Route path="/alugaMais/rent/:_id" component={RentForm} />
 
     </div>
+    <Footer/>
   </BrowserRouter>
   );
 }
