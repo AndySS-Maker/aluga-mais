@@ -30,30 +30,30 @@ class VehicleDetails extends Component {
 
   render() {
     return (
-      <div className="container">
-        <div>
-        <img src={this.state.image_url} alt="vehicle" />
-        </div>
-        <p>
-          <strong>Nome: </strong>
-          {this.state.name}
-        </p>
-        <p>
-          <strong>Marca: </strong>
-          {this.state.brand}
-        </p>
-        <p>
-          <strong>Tipo: </strong>
-          {this.state.type}
-        </p>
-        <p>
-          <strong>Ano: </strong>
-          {this.state.year}
-        </p>
-        <p>
-          <strong>Km: </strong>
-          {this.state.km}
-        </p>
+      <div className="container ms-auto text-center m-5">
+        <div className="pt-5 m-5">
+          <img src={this.state.image_url} className="container" alt="vehicle" />
+          </div>
+          <p>
+            <strong>Nome: </strong>
+            {this.state.name}
+          </p>
+          <p>
+            <strong>Marca: </strong>
+            {this.state.brand}
+          </p>
+          <p>
+            <strong>Tipo: </strong>
+            {this.state.type}
+          </p>
+          <p>
+            <strong>Ano: </strong>
+            {this.state.year}
+          </p>
+          <p>
+            <strong>Km: </strong>
+            {this.state.km}
+          </p>
         <div>
         <p>
           <strong>Veículo disponível? </strong>
