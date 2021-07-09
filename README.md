@@ -5,6 +5,7 @@
   Sobre o App:
 </h2>
 <p>Aluga Mais é uma aplicação desenvolvida com o objetivo de promover a locação de veículos particulares, sendo estes disponibilizados por pessoas físicas, em uma plataforma online e bem intuitiva.</p>
+<p><a href="https://docs.google.com/presentation/d/1J8uzGyFWQ3F44wAudUhoYvZXxBlRLVQXey8ytV0nfl8/edit?usp=sharing">Apresentação</p>
 <h2>
   Algumas funcionalidades:
 </h2>
