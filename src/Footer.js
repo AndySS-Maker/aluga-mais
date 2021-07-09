@@ -55,8 +55,7 @@ function Footer () {
                 <div className="row align-items-center">
 
                     <div className="col-md-7 col-lg-8">
-                        <p>	Copyright ©2021 Todos os direitos reservados.
-</p>
+                        <p>2021 Todos os direitos reservados.</p>
                         
                     </div>
 
