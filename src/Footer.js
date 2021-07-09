@@ -12,10 +12,7 @@ function Footer () {
                     <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-4">
                         <h5 className="text-uppercase mb-4 font-weight-bold text-warning">Sobre a Empresa</h5>
                         <p>A empresa AlugaMais oferece o serviço de locação de veículos particulares. Aqui você pode disponibilizar ou alugar carros, utilitários, motocicletas ou qualquer outro tipo de veículo. </p>
-                        
                     </div>
-
-
 
                     <div className="col-md-3 col-lg-3 col-xl-2 mx-auto mt-4">
                         <h5 className="text-uppercase mb-4 font-weight-bold text-warning">Links úteis</h5>
