@@ -38,13 +38,8 @@ class Home extends Component {
                 <section className="hero-image">
                     <h1>Veículos para todos</h1>
                     <h2>Nunca mais perca uma viagem!</h2>
-
-                    
-
                 </section>
                 
-                
-
                 <div>
                     <h2 className="text-center mt-5">Confira algumas opções:</h2>
                     <Carousel breakPoints={breakPoints} className="mt-5 mb-5">
@@ -54,8 +49,6 @@ class Home extends Component {
                                 location={this.props.location.pathname} 
                                 style={{width: "300px", height: "auto"}} />
                             </div>
-
- 
                         ))}
                     </Carousel>
 
