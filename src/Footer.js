@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 function Footer () {
     return (
-        <div className="bg-dark text-white pt-3 pb-2 alpha">
+        <div className="alpha text-white pt-3 pb-2" >
 
-            <div className="container text-center text-md-left">
+            <div className="container text-center text-md-left ">
 
                 <div className="row text-center text-md-left">
 

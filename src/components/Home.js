@@ -36,8 +36,8 @@ class Home extends Component {
         return (
             <div>
                 <section className="hero-image">
-                    <h1>Veículos para todos.</h1>
-                    <h2>Para nunca mais perder uma viagem!</h2>
+                    <h1>Veículos para todos</h1>
+                    <h2>Nunca mais perca uma viagem!</h2>
 
                     
 
