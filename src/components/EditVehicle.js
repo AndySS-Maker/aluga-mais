@@ -109,7 +109,7 @@ render() {
                   required
               />
               <ChoiceInput                  
-                  label="Veiculo esta disponivel?"
+                  label="Veículo está disponivel?"
                   type="checkbox"
                   name="avaliable"
                   onChange={() => {
