@@ -12,7 +12,7 @@
 <h2>
   Tecnologias utilizadas:
 </h2>
-<p>A aplicação foi feita em ReactJS em conjunto com algumas bibliotecas, dentre elas está o Bootstrap em conjunto com Sass na estilização dos componentes e react-elastic-carousel. Foi criado um servidor conectado a uma API externa onde utilizando o Axios, podemos Ler, Editar, Criar e Deletar novos elementos. O Deploy da aplicação foi feito pelo Netlify.</p>
+<p>Aluga Mais é uma aplicação responsiva e foi desenvolvida em ReactJS em conjunto com algumas bibliotecas, dentre elas está o Bootstrap em conjunto com Sass na estilização dos componentes e react-elastic-carousel. Foi criado um servidor conectado a uma API externa onde utilizando o Axios, podemos Ler, Editar, Criar e Deletar novos elementos. O Deploy da aplicação foi feito pelo Netlify.</p>
 <h2>
   Sobre os criadores:
 </h2>
